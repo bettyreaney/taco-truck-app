@@ -1,5 +1,8 @@
 // load modules require express
 const express = require('express');
+const morgan = require('morgan');
+const port = 3000;
+const indexRouter = require('./routes/index');  
 
 // initilize express app
 const app = express();
@@ -12,7 +15,7 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-// mount route handlers
+// mount routes app.use
 app.use('/', indexRouter);
 
 // listen on a port
