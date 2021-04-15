@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Trucks</title>
+</head>
+<body>
+    <h1>Fill your burrito</h1>
+    <form action="/trucks" method="POST">
+        <label>Meat: 
+            <select name="meat">
+                <option value="Carne Asada">Carne Asada</option>
+                <option value="Pollo">Pollo</option>
+                <option value="Carnitas">Carnitas</option>
+                <option value="Pastor">Pastor</option>
+            </select>
+        </label>
+        <label>
+            <select name="beans">
+                <option value="Refried">Refried</option>
+                <option value="Black">Black</option>
+                <option value="Pinto">Pinto</option>
+            </select>
+        </label>
+        <!-- <label>Cheese:
+            <input type="checkbox" name="cheese" checked>
+        </label>
+        <label>Guac:
+            <input type="checkbox" name="guacamole" checked>
+        </label> -->
+        <input type="submit" value="Add to Order">
+    </form>
+    
+</body>
+</html>
