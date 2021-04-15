@@ -7,7 +7,7 @@
     <title>Taco Trucks</title>
 </head>
 <body>
-    <h1>Fill your burrito</h1>
+    <h1>Build your burrito</h1>
     <form action="/trucks" method="POST">
         <label>Meat: 
             <select name="meat">
@@ -17,19 +17,26 @@
                 <option value="Pastor">Pastor</option>
             </select>
         </label>
-        <label>
+        <label>Beans:
             <select name="beans">
                 <option value="Refried">Refried</option>
                 <option value="Black">Black</option>
                 <option value="Pinto">Pinto</option>
             </select>
         </label>
-        <!-- <label>Cheese:
+        <label>Cheese:
             <input type="checkbox" name="cheese" checked>
         </label>
         <label>Guac:
             <input type="checkbox" name="guacamole" checked>
-        </label> -->
+        </label>
+        <label>Salsa:
+            <select name="salsa">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Pico de Gallo">Pico de Gallo</option>
+            </select>
+        </label>
         <input type="submit" value="Add to Order">
     </form>
     

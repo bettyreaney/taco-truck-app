@@ -9,6 +9,12 @@ const truckSchema = new Schema({
     beans: {
         type: String,
         enum: ['Refried', 'Pinto', 'Black'],
+    },
+    cheese: Boolean,
+    guac: Boolean,
+    salsa: {
+        type: String,
+        enum: ['Red', 'Green', 'Pico de Gallo'],
     }
     }, { timestamps: true });
 
