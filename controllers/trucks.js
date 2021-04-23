@@ -1,7 +1,18 @@
+const Truck = require('../models/truck');
+
 module.exports = {
-    new: newTruck
+    new: newTruck,
+    index,
 };
 
-function newTruck(req, res) {
+function index(req, res) {
     res.render('trucks/new');
 }
+
+function newTruck(req, res) {
+    console.log(req.body);
+    Truck.create(req.body, function(err, truck) {
+        res.redirect('carts/new');
+    }); 
+};
+

@@ -1,3 +1,32 @@
 h1 {
-    color: lightgreen;
+    color: #AA2622;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+body {
+    background-color: #59B96D;
+    text-align: center;
+}
+
+header {
+    background-color: grey;
+    padding: 20px;
+    color: gray;
+    text-align: right;
+}
+
+.home {
+    text-align: center;
+}
+
+#gohome {
+    color: #AA2622;
 }

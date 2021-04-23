@@ -4,7 +4,11 @@ const Schema = mongoose.Schema;
 const truckSchema = new Schema({
     meat: {
         type: String,
-        enum: ['Asada', 'Carnitas', 'Pollo', 'Pastsor', 'None'],
+        enum: ['Carne Asada', 'Carnitas', 'Pollo', 'Pastor', 'None'],
+    },
+    filling: {
+        type: String,
+        enum: ['Carne Asada', 'Pollo', 'Cheese'],
     },
     beans: {
         type: String,
@@ -12,6 +16,11 @@ const truckSchema = new Schema({
     },
     cheese: Boolean,
     guac: Boolean,
+    side: Boolean,
+    onion: Boolean,
+    cilantro: Boolean,
+    lettuce: Boolean,
+    pico: Boolean,
     salsa: {
         type: String,
         enum: ['Red', 'Green', 'Pico de Gallo'],
