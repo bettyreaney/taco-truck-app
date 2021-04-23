@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const port = 3000;
 const indexRouter = require('./routes/index'); 
 const truckRouter = require('./routes/trucks'); 
+const cartsRouter = require('./routes/carts');
 
 // initilize express app
 const app = express();
@@ -22,6 +23,7 @@ app.use(express.static('public'));
 // mount routes app.use
 app.use('/', indexRouter);
 app.use('/trucks', truckRouter);
+app.use('/carts', cartsRouter);
 
 // listen on a port
 app.listen(3000, function() {

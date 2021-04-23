@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <ul> <% truck.forEach(function(item) { %>
+        <li>
+            <%= item.meat %>
+            <%= item.filling %>
+            <%= item.beans %>
+            <%= item.cheese ? 'cheese: yes' : 'cheese: no' %>
+            <%= item.guac ? 'guac: yes' : 'guac: no' %>
+            <%= item.side ? 'side: yes' : 'side: no' %>
+            <%= item.onion ? 'onion: yes' : 'onion: no' %>
+            <%= item.cilantro ? 'cilantro: yes' : 'cilantro: no' %>
+            <%= item.lettuce ? 'lettuce: yes' : 'lettuce: no' %>
+            <%= item.pico ? 'pico: yes' : 'pico: no' %>
+            <%= item.salsa ? 'salse: yes' : 'salsa: no' %>
+            
+        </li>
+            <% }) %>
+    </ul>
+    
+</body>
+</html>
