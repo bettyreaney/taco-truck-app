@@ -12,21 +12,33 @@ form {
 }
 
 body {
-    background-color: #59B96D;
+    background-color: lightgrey;
     text-align: center;
 }
 
 header {
-    background-color: grey;
-    padding: 20px;
+    background-color: lightblue;
+    padding: 15px;
     color: gray;
     text-align: right;
 }
 
 .home {
-    text-align: center;
+    text-align: right;
 }
 
 #gohome {
     color: #AA2622;
+}
+
+#taco {
+    flex: auto;
+    align-items: center;
+}
+
+
+footer {
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
 }
