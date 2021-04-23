@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Taco Trucks</title>
 </head>
+<header>
+    <button>Cart</button>
+    <button class="home">Home</button>
+</header>
+<h1>Menu</h1>
+<h2>Build your own...</h2>
 <body>
-    <h1>Build your burrito</h1>
+    <h2>Burrito $8</h2>
     <form action="/trucks" method="POST">
         <label>Meat: 
             <select name="meat">
@@ -38,8 +44,81 @@
                 <option value="Pico de Gallo">Pico de Gallo</option>
             </select>
         </label>
-        <input type="submit" value="Add to Order">
+        <input type="submit" value="Add to Cart">
     </form>
+    <h2>Enchilades $6</h2>
+    <form action="/trucks" method="POST">
+        <label>Filling: 
+            <select name="filling">
+                <option value="Carne Asada">Carne Asada</option>
+                <option value="Pollo">Pollo</option>
+                <option value="Cheese">Cheese</option>
+            </select>
+        </label>
+        <label>Side:
+            <input type="checkbox" name="beans and rice" checked>
+        </label>
+        <label>Sauce:
+            <select name="sauce">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+            </select>
+        </label>
+        <input type="submit" value="Add to Cart">
+    </form>
+    <h2>Tacos $2</h2>
+    <form action="/trucks" method="POST">
+        <label>Meat: 
+            <select name="meat">
+                <option value="Carne Asada">Carne Asada</option>
+                <option value="Pollo">Pollo</option>
+                <option value="Carnitas">Carnitas</option>
+                <option value="Pastor">Pastor</option>
+            </select>
+        </label>
+        <label>Onion:
+            <input type="checkbox" name="onion" checked>
+        </label>
+        <label>Cilantro:
+            <input type="checkbox" name="cilantro" checked>
+        </label>
+        <label>Salsa:
+            <select name="salsa">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+            </select>
+        </label>
+        <input type="submit" value="Add to Cart">
+    </form>
+    <h2>Torta $8</h2>
+    <form action="/trucks" method="POST">
+        <label>Meat: 
+            <select name="meat">
+                <option value="Carne Asada">Carne Asada</option>
+                <option value="Pollo">Pollo</option>
+                <option value="Carnitas">Carnitas</option>
+                <option value="Pastor">Pastor</option>
+            </select>
+        </label>
+        <label>Lettuce:
+            <input type="checkbox" name="lettuce" checked>
+        </label>
+        <label>Cheese:
+            <input type="checkbox" name="cheese" checked>
+        </label>
+        <label>Guac:
+            <input type="checkbox" name="guacamole" checked>
+        </label>
+        <label>Salsa:
+            <select name="salsa">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Pico de Gallo">Pico de Gallo</option>
+            </select>
+        </label>
+        <input type="submit" value="Add to Cart">
+    </form>
+    <a id="gohome" href="/">Home</a>
     
 </body>
 </html>
