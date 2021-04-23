@@ -1,6 +1,7 @@
 h1 {
     color: #AA2622;
     text-align: center;
+    padding: 5px;
 }
 
 h2 {
@@ -9,6 +10,23 @@ h2 {
 
 form {
     text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 30px;
 }
 
 body {
@@ -21,7 +39,7 @@ header {
     padding: 15px;
     color: gray;
     text-align: right;
-}
+} 
 
 .home {
     text-align: right;
@@ -34,6 +52,7 @@ header {
 #taco {
     flex: auto;
     align-items: center;
+    padding: 50px;
 }
 
 
