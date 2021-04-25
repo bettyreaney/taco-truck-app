@@ -19,6 +19,9 @@ function create(req, res) {
     console.log(req.body)
     req.body.cheese = !!req.body.cheese
     req.body.guac = !!req.body.guac
+    req.body.onion =!!req.body.onion
+    req.body.cilantro =!!req.body.cilantro
+    req.body.lettuce =!!req.body.lettuce
     Truck.create(req.body, function(err, truck) {
         res.redirect('/trucks');
     });

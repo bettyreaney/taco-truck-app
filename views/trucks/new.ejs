@@ -15,6 +15,7 @@
         <a href="/carts/new">Cart</a>
     </button>
 </header>
+
 <h1>MENU</h1>
 <h2>Build your own...</h2>
 <body>
@@ -50,17 +51,18 @@
         </label>
         <button id="addtocart" type="submit">Add to Cart</button>
     </form>
+
     <h2>Enchilades $6</h2>
     <form action="/trucks" method="POST">
-        <label>Filling: 
-            <select name="filling">
+        <label>Meat: 
+            <select name="meat">
                 <option value="Carne Asada">Carne Asada</option>
                 <option value="Pollo">Pollo</option>
-                <option value="Cheese">Cheese</option>
+                <option value="None">None</option>
             </select>
         </label>
-        <label>Side of Beans & Rice:
-            <input type="checkbox" name="beans and rice" checked>
+        <label>Cheese:
+            <input type="checkbox" name="cheese" checked>
         </label>
         <label>Sauce:
             <select name="sauce">
@@ -68,18 +70,16 @@
                 <option value="Green">Green</option>
             </select>
         </label>
-        <button id="addtocart">
-            <a href="/trucks">Add to Cart</a>
-        </button>
+        <button id="addtocart" type="submit">Add to Cart</button>
     </form>
+
     <h2>Tacos $2</h2>
     <form action="/trucks" method="POST">
         <label>Meat: 
             <select name="meat">
                 <option value="Carne Asada">Carne Asada</option>
                 <option value="Pollo">Pollo</option>
-                <option value="Carnitas">Carnitas</option>
-                <option value="Pastor">Pastor</option>
+                <option value="None">None</option>
             </select>
         </label>
         <label>Onion:
@@ -92,12 +92,11 @@
             <select name="salsa">
                 <option value="Red">Red</option>
                 <option value="Green">Green</option>
+                <option value="Pico de Gallo">Pico de Gallo</option>
             </select>
-        </label>
-        <button id="addtocart">
-            <a href="/trucks">Add to Cart</a>
-        </button>
+        <button id="addtocart" type="submit">Add to Cart</button>
     </form>
+
     <h2>Torta $8</h2>
     <form action="/trucks" method="POST">
         <label>Meat: 
@@ -108,14 +107,14 @@
                 <option value="Pastor">Pastor</option>
             </select>
         </label>
-        <label>Lettuce:
-            <input type="checkbox" name="lettuce" checked>
-        </label>
         <label>Cheese:
             <input type="checkbox" name="cheese" checked>
         </label>
         <label>Guac:
             <input type="checkbox" name="guac" checked>
+        </label>
+        <label>Lettuce:
+            <input type="checkbox" name="lettuce" checked>
         </label>
         <label>Salsa:
             <select name="salsa">
@@ -125,8 +124,9 @@
             </select>
         </label>
         <button id="addtocart" type="submit">Add to Cart</button>
-
     </form>
+
+
 
     <a href="/carts/new">Checkout</a>
     
