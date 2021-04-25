@@ -39,7 +39,7 @@
             <input type="checkbox" name="cheese" checked>
         </label>
         <label>Guac:
-            <input type="checkbox" name="guacamole" checked>
+            <input type="checkbox" name="guac" checked>
         </label>
         <label>Salsa:
             <select name="salsa">
@@ -48,7 +48,7 @@
                 <option value="Pico de Gallo">Pico de Gallo</option>
             </select>
         </label>
-        <input type="submit" value="Add to Cart">
+        <button id="addtocart" type="submit">Add to Cart</button>
     </form>
     <h2>Enchilades $6</h2>
     <form action="/trucks" method="POST">
@@ -59,7 +59,7 @@
                 <option value="Cheese">Cheese</option>
             </select>
         </label>
-        <label>Side:
+        <label>Side of Beans & Rice:
             <input type="checkbox" name="beans and rice" checked>
         </label>
         <label>Sauce:
@@ -68,7 +68,10 @@
                 <option value="Green">Green</option>
             </select>
         </label>
-        <input type="submit" value="Add to Cart">
+        <!-- <input type="submit" value="Add to Cart"> -->
+        <button id="addtocart">
+            <a href="/trucks">Add to Cart</a>
+        </button>
     </form>
     <h2>Tacos $2</h2>
     <form action="/trucks" method="POST">
@@ -92,7 +95,10 @@
                 <option value="Green">Green</option>
             </select>
         </label>
-        <input type="submit" value="Add to Cart">
+        <!-- <input type="submit" value="Add to Cart"> -->
+        <button id="addtocart">
+            <a href="/trucks">Add to Cart</a>
+        </button>
     </form>
     <h2>Torta $8</h2>
     <form action="/trucks" method="POST">
@@ -120,10 +126,16 @@
                 <option value="Pico de Gallo">Pico de Gallo</option>
             </select>
         </label>
-        <input type="submit" value="Add to Cart">
+        <!-- <input type="submit" value="Add to Cart"> -->
+        <button id="addtocart">
+            <a href="/trucks">Add to Cart</a>
+        </button>
     </form>
     
-
+    <button id="checkout">
+        <a href="/carts/new">Checkout</a>
+    </button>
     
 </body>
+
 </html>

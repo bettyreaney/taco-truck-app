@@ -13,12 +13,14 @@
             <a href="/">Home</a>
         </button>
         <button>
-            <a href="/carts/new">Cart</a>
+            <a href="/trucks">Add to Order</a>
         </button>
     </header>
     <h1>Cart</h1>
     <ul> <% truck.forEach(function(item) { %>
         <li>
+            <form action="/trucks/<%= item._id %>?_method=DELETE" method="POST">
+                <button type="submit">🗑</button>
             <%= item.meat %>
             <%= item.filling %>
             <%= item.beans %>
@@ -30,7 +32,7 @@
             <%= item.lettuce ? 'lettuce: yes' : 'lettuce: no' %>
             <%= item.pico ? 'pico: yes' : 'pico: no' %>
             <%= item.salsa ? 'salse: yes' : 'salsa: no' %>
-            
+            </form>
         </li>
             <% }) %>
     </ul>

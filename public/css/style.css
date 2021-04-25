@@ -61,3 +61,16 @@ footer {
     background-color: lightblue;
     justify-content: center;
 }
+
+#checkout {
+    background-color: darkgray;
+    width: 100px;
+    text-align: center;
+    margin: 50px auto;
+    color: black;
+}
+
+#addtocart {
+    margin: 10px;
+    background-color: #9bcba8;
+}
