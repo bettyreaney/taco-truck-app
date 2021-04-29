@@ -21,16 +21,17 @@
         <li>
             <form action="/trucks/<%= item._id %>?_method=DELETE" method="POST">
                 <button type="submit">🗑</button>
+            
+            <%= item.itemName %>
             <%= item.meat %>
             <%= item.filling %>
             <%= item.beans %>
-            <%= item.cheese ? 'cheese: yes' : 'cheese: no' %>
-            <%= item.guac ? 'guac: yes' : 'guac: no' %>
-            <%= item.side ? 'side: yes' : 'side: no' %>
-            <%= item.onion ? 'onion: yes' : 'onion: no' %>
-            <%= item.cilantro ? 'cilantro: yes' : 'cilantro: no' %>
-            <%= item.lettuce ? 'lettuce: yes' : 'lettuce: no' %>
-            <%= item.pico ? 'pico: yes' : 'pico: no' %>
+            <%= item.cheese ? 'cheese, ' : '' %>
+            <%= item.guac ? 'guac, ' : '' %>
+            <%= item.side ? 'side, ' : '' %>
+            <%= item.onion ? 'onion, ' : '' %>
+            <%= item.cilantro ? 'cilantro, ' : '' %>
+            <%= item.lettuce ? 'lettuce, ' : '' %>
             <%= item.salsa %>
             </form>
         </li>

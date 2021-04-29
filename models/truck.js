@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const truckSchema = new Schema({
+    itemName: String,
     meat: {
         type: String,
         enum: ['Carne Asada', 'Carnitas', 'Pollo', 'Pastor', 'None'],
@@ -16,11 +17,9 @@ const truckSchema = new Schema({
     },
     cheese: Boolean,
     guac: Boolean,
-    side: Boolean,
     onion: Boolean,
     cilantro: Boolean,
     lettuce: Boolean,
-    pico: Boolean,
     salsa: {
         type: String,
         enum: ['Red', 'Green', 'Pico de Gallo'],
