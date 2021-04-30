@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+
+    <form action="/carts/<%= item._id %>?_method=PUT" method="POST">
+        <button type="submit">Update</button>
+    
+        <input type="text" name="itemName" value="<%= item.itemName %>">
+        <input type="text" name="meat" value="<%= item.meat %>">
+        <input type="text" name="beans" value="<%= item.beans %>">
+        <input type="text" name="cheese" value="<%= item.cheese %>">
+        <input type="text" name="guac" value="<%= item.guac %>">
+        <input type="text" name="onion" value="<%= item.onion %>">
+        <input type="text" name="cilantro" value="<%= item.cilantro %>">
+        <input type="text" name="lettuce" value="<%= item.lettuce %>">
+        <input type="text" name="salsa" value="<%= item.salsa %>">
+
+
+        <%= item.itemName %> with
+        <%= item.meat %>,
+        <%= item.beans %> Beans,
+        <%= item.cheese ? 'Cheese, ' : '' %>
+        <%= item.guac ? 'Guac, ' : '' %>
+        <%= item.onion ? 'Onion, ' : '' %>
+        <%= item.cilantro ? 'Cilantro, ' : '' %>
+        <%= item.lettuce ? 'Lettuce, ' : '' %>
+        and <%= item.salsa %> Salsa
+        <%= '' %>
+    </form>
+    
+</body>
+</html>

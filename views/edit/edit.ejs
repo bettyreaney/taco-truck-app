@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <form action="/trucks/<%= item._id %>?_method=DELETE" method="POST">
+        <button type="submit">🗑</button>
+    
+        <%= item.itemName %> with
+        <%= item.meat %>,
+        <%= item.beans %> Beans,
+        <%= item.cheese ? 'Cheese, ' : '' %>
+        <%= item.guac ? 'Guac, ' : '' %>
+        <%= item.side ? 'side, ' : '' %>
+        <%= item.onion ? 'onion, ' : '' %>
+        <%= item.cilantro ? 'cilantro, ' : '' %>
+        <%= item.lettuce ? 'lettuce, ' : '' %>
+        and <%= item.salsa %> Salsa
+        <%= '' %>
+    </form>
+    <a id="edititem" href="/trucks/<%= item._id%>/edit">Edit Item</a>
+    
+</body>
+</html>

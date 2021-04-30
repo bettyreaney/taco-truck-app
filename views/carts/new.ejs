@@ -22,18 +22,18 @@
             <form action="/trucks/<%= item._id %>?_method=DELETE" method="POST">
                 <button type="submit">🗑</button>
             
-            <%= item.itemName %>
-            <%= item.meat %>
-            <%= item.filling %>
-            <%= item.beans %>
-            <%= item.cheese ? 'cheese, ' : '' %>
-            <%= item.guac ? 'guac, ' : '' %>
-            <%= item.side ? 'side, ' : '' %>
-            <%= item.onion ? 'onion, ' : '' %>
-            <%= item.cilantro ? 'cilantro, ' : '' %>
-            <%= item.lettuce ? 'lettuce, ' : '' %>
-            <%= item.salsa %>
+                <%= item.itemName %> with
+                <%= item.meat %>,
+                <%= item.beans %> Beans,
+                <%= item.cheese ? 'Cheese, ' : '' %>
+                <%= item.guac ? 'Guac, ' : '' %>
+                <%= item.onion ? 'Onion, ' : '' %>
+                <%= item.cilantro ? 'Cilantro, ' : '' %>
+                <%= item.lettuce ? 'Lettuce, ' : '' %>
+                and <%= item.salsa %> Salsa
+                <%= '' %>
             </form>
+            <a id="edititem" href="/carts/<%= item._id%>/edit">Edit Item</a>
         </li>
             <% }) %>
     </ul>
