@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb+srv://breaney:betty@cluster0.7v0na.mongodb.net/taco-truck-app?retryWrites=true&w=majority';
+const connectionURI = process.env.DATABASE_URI;
 
-mongoose.connect(connectionString, { 
+mongoose.connect(connectionURI, { 
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,

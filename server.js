@@ -2,10 +2,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
-const port = 3000;
+const port = process.env.PORT || '3000';
 const indexRouter = require('./routes/index'); 
 const truckRouter = require('./routes/trucks'); 
 const cartsRouter = require('./routes/carts');
+
+// load the env vars
+require('dotenv').config();
 
 // initilize express app
 const app = express();
@@ -28,6 +31,6 @@ app.use('/trucks', truckRouter);
 app.use('/carts', cartsRouter);
 
 // listen on a port
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log('Express is listening for requests from the browser')
 });

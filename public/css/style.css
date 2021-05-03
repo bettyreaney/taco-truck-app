@@ -60,6 +60,7 @@ footer {
     display: flex;
     background-color: lightblue;
     justify-content: center;
+    flex-grow: 1;
 }
 
 #checkout {
@@ -93,4 +94,10 @@ input[readOnly] {
 
  #editfunction {
      margin: 50px;
+ }
+
+ #update {
+     background-color: #9bcba8;
+     margin: 30px;
+     padding: 5px;
  }

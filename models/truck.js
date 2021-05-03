@@ -18,6 +18,7 @@ const truckSchema = new Schema({
     cheese: Boolean,
     guac: Boolean,
     onion: Boolean,
+    sauce: Boolean,
     cilantro: Boolean,
     lettuce: Boolean,
     salsa: {
