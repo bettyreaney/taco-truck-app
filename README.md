@@ -1,6 +1,6 @@
 # Full Stack Tacos
 
-I have built an App for a fictiious local taco truck where you can customize your order ahead of time
+I have built an App for a ficticious local taco truck where you can customize your order ahead of time
 
 ## Technologies Used
 - HTML5
