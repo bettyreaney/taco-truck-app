@@ -10,8 +10,12 @@ I have built an App for a fictiious local taco truck where you can customize you
 - Mongoose
 - MongoDB
 
-## Wireframes/Screenshots
-![wireframe](Link Here)
+## Screenshots
+![screenshot](./public/imgs/home.png)
+![screenshot](./public/imgs/menu.png)
+![screenshot](./public/imgs/cart.png)
+![screenshot](./public/imgs/edit.png)
+
 
 ## Getting Started
 [Click here](https://taco-truck-app.herokuapp.com/) to get started
